@@ -33,6 +33,6 @@ public class ModuleModel implements Serializable {
     @ManyToOne(optional = false)
     private CourseModel course;
 
-    @OneToMany(mappedBy = "module")
+    @OneToMany(mappedBy = "module", fetch = FetchType.LAZY)
     private Set<LessonModel> lessons;
 }
