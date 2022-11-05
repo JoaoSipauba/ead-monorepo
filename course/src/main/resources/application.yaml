@@ -13,3 +13,9 @@ spring:
     properties:
       hibernate:
         show_sql: true
+  output:
+    ansi:
+      enabled: always
+logging:
+  level:
+    com.ead: TRACE
